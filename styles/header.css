@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lexend+Deca:wght@100..900&display=swap');
+
+:root{
+    --cor-principal:#ff00ea;
+    --cor-secundaria:#7e0474;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+}
+
+@media(max-width:430px){
+
+    .nav-name{
+        font-style: italic;
+        font-weight: 500;
+        margin: 35px 25px 15px 25px;
+        color: #ffffff;
+        font-size: 50px;
+        font-family: "Great Vibes", cursive;
+        text-align: center;
+    }
+
+    #nav_list{
+        display: flex;
+        gap: 45px;
+        justify-content: center;
+        margin-bottom: 2px;
+    }
+
+    #nav_list a{
+        text-decoration: none;
+        
+    }
+
+    .nav-item{
+        color:#ffffff;
+        font-size: 18px;
+        text-align: center;
+        transition: 500ms;
+    }
+
+    .nav-item:hover{
+        color: #f897f0;
+        text-decoration: underline;
+        transform: scale(1.15);
+        transition: 500ms;
+    }
+
+    
+}
+
+
+
+
+
+
+@media(max-width:390px){
+
+    .nav-name{
+        font-style: italic;
+        font-weight: 500;
+        margin: 35px;
+        color: #ffffff;
+        font-size: 50px;
+        font-family: "Great Vibes", cursive;
+        text-align: center;
+    }
+
+    #nav_list{
+        display: flex;
+        gap: 45px;
+        justify-content: center;
+        justify-items: center;
+        margin-bottom: 2px;
+    }
+
+    #nav_list a{
+        text-decoration: none;
+        
+    }
+
+    .nav-item{
+        color:#ffffff;
+        font-size: 18px;
+        text-align: center;
+        transition: 500ms;
+    }
+
+    .nav-item:hover{
+        color: #f897f0;
+        text-decoration: underline;
+        transform: scale(1.15);
+        transition: 500ms;
+    }
+
+    
+}
+
+@media(min-width:768px){
+
+    .nav-name{
+        font-style: italic;
+        font-weight: 500;
+        margin: 50px;
+        color: #ffffff;
+        font-size: 80px;
+        font-family: "Great Vibes", cursive;
+        text-align: center;
+    }
+
+    #nav_list{
+        display: flex;
+        gap: 75px;
+        justify-content: center;
+        justify-items: center;
+        margin-bottom: 2px;
+    }
+
+    #nav_list a{
+        text-decoration: none;
+        
+    }
+
+    .nav-item{
+        color:#ffffff;
+        font-size: 30px;
+        text-align: center;
+        transition: 500ms;
+    }
+
+    .nav-item:hover{
+        color: #f897f0;
+        text-decoration: underline;
+        transform: scale(1.15);
+        transition: 500ms;
+    }
+
+    
+}
