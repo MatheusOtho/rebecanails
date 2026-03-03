@@ -29,6 +29,8 @@
 
     .back-unhas{
         width: 90%;
+        max-width: 90%;
+        display: block;
     }
 
     .description-cta{
