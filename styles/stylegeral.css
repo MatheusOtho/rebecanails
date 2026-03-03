@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lexend+Deca:wght@100..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+            background: linear-gradient(#57005a, #85018a, #c203c9);
+
+}
+
+:root{
+    --cor-principal:#ff00ea;
+    --cor-secundaria:#7e0474;
+}
+
+*{
+    font-family: "Lexend Deca", sans-serif;
+}
