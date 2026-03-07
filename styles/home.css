@@ -84,16 +84,44 @@
         justify-content: center;
         }
 
-    #ava_ava{
-        margin-left: 35px; 
-        margin-right: 35px;
-        justify-items: center;
-        align-items: center;
-        display: grid;
-        gap: 1%;
-        grid-template-columns: repeat(2, 1fr);
+    #bg_ava{
+        background: white;
+        margin: 25px;
+        border-radius: 20px;
+        height: 100px;
     }
 
+    #star{
+        margin-top: 10px;
+        padding: 0;
+        margin-bottom: 5px;
+        color: #d103c0;
+    }
+
+    .align-ava{
+        gap: 25px;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        display: flex;
+        height: 45px;
+    }
+    
+    .name-comentario{
+        margin-top: 10px;
+        margin: 0;
+        margin-left: 15px;
+        color: #d103c0;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .comentario{
+        margin-left: 15px;
+        color: black;
+    }
+
+  
 
    .ava-img{
     margin: 15px;
@@ -248,11 +276,10 @@
     #ava_ava{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-
     }
 
    .ava-img{
-    width: 90%;
+    width: 100%;
     margin: 20px;
    }
 
@@ -278,8 +305,11 @@
     }
 
     .cont-subtitles span{
-        color: #ff86e5;
+        color:#bd02ad;
         font-weight: 700;
+        background: white;
+        border-radius: 10px;
+        padding: 0px 8px 0px 8px;
     }
 
     #brands{
