@@ -1,7 +1,19 @@
+  .rodape{
+        color: #ffffff;
+        text-align: center;
+        font-size: 45px;
+    }
+    
+    hr{
+        color: black;
+    }
+
+
 @media(max-width:430px){
     .rodape{
         color: #ffffff;
         text-align: center;
+        font-size: 25px;
     }
     
     hr{
@@ -9,14 +21,3 @@
     }
 }
 
-@media(min-width:768px){
-    .rodape{
-        color: #ffffff;
-        text-align: center;
-        font-size: 35px;
-    }
-    
-    hr{
-        color: black;
-    }
-}
