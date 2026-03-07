@@ -85,17 +85,56 @@
         }
   
 
-   .ava-img{
-    margin: 15px;
-    width: 95%;
-   }
+#ava_ava{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 25px;
+    margin: 40px;
+}
 
+#bg_ava{
+    width: 100%;
+    max-width: 420px;
+    background: white;
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.15);
+}
 
+.align-ava{
+    display: flex;
+    align-items: center;
+}
 
-   .ava-img:hover{
-    transform: scale(1.05);
-    transition: 500ms;
-   }
+.name-comentario{
+    margin: 0;
+    margin-left: 10px;
+    color: #d103c0;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.stars{
+    margin-left: auto;
+    margin-right: 5px;
+    display: flex;
+    gap: 4px;
+}
+
+#star{
+    color: #d103c0;
+    font-size: 16px;
+}
+
+.comentario{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 8px;
+    color: black;
+    line-height: 1.5;
+    font-size: 16px;
+}
 
     .cont-titles{
         margin-top: 150px;
@@ -113,9 +152,12 @@
         margin-right: 25px;
     }
 
-    .cont-subtitles span{
-        color: #ff86e5;
+      .cont-subtitles span{
+        color:#bd02ad;
         font-weight: 700;
+        background: white;
+        border-radius: 10px;
+        padding: 0px 8px 0px 8px;
     }
 
     #brands{
@@ -234,63 +276,52 @@
         justify-content: center;
     }
 
-     #bg_ava{
-        background: white;
-        margin: 25px;
-        border-radius: 20px;
-        height: 100px;
-    }
-
-#star{
-    margin-top: 2px;
-    padding: 0;
-    margin-bottom: 5px;
-    color: #d103c0;
+#ava_ava{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
 }
 
-.stars{
-     margin: 0;
-    margin-left: auto;
-    margin-right: 15px; /* espaço da borda direita */
-    display: flex;
+#bg_ava{
+    background: white;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 16px;
 }
 
 .align-ava{
-    margin: 0;
-    padding: 0;
-    align-items: center;
     display: flex;
-    height: 45px;
+    align-items: center;
 }
 
 .name-comentario{
     margin: 0;
-    margin-left: 15px;
+    margin-left: 10px;
     color: #d103c0;
     font-weight: 700;
     font-size: 18px;
 }
 
-.comentario{
-    margin-left: 15px;
-    color: black;
+.stars{
+    margin-left: auto;
+    margin-right: 5px;
+    display: flex;
+    gap: 3px;
 }
 
+#star{
+    color: #d103c0;
+    font-size: 15px;
+}
 
-    #ava_ava{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-   .ava-img{
-    width: 100%;
-    margin: 20px;
-   }
-
-   .ava-img:hover{
-    transform: scale(1.05);
-    transition: 500ms;
-   }
+.comentario{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 6px;
+    color: black;
+    line-height: 1.4;
+    font-size: 15px;
+}
 
     .cont-titles{
         margin-top: 60px;
