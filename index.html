@@ -6,16 +6,18 @@
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                 <link rel="stylesheet" href=".//styles/stylegeral.css">
                 <link rel="stylesheet" href=".//styles/header.css">
                 <link rel="stylesheet" href=".//styles/home.css">
-                <link rel="stylesheet" href=".//styles/footer.css   ">
+                <link rel="stylesheet" href=".//styles/footer.css">
                 <title>RebecaNails</title>
             </head>
             <body>
-                <header>
+                <header data-aos="fade-down">
                     <h1 class="nav-name">RebecaNails</h1>
-                    <div id="nav_list">
+                    <div id="nav_list" data-aos="fade-up" data-aos="fade-down">
                         <a href="#works">
                         <h5 class="nav-item">Galeria</h5>
                         </a>
@@ -30,7 +32,7 @@
                     </div>
                 </header>
 
-                <section id="cta">
+                <section id="cta" data-aos="fade-up">
                     <h1 class="title-cta">Realce sua <span>beleza</span> com <span>unhas</span> impecáveis!</h1>
                     <p class="description-cta">Transformando unhas em verdadeiras <span>obras de arte </span></p>
                 </section>
@@ -39,22 +41,22 @@
                         <div id="back_unhasbg">
                         <img src=".//img/backimg.png" alt="background de unhas" class="back-unhas">
                         </div>
-                        <h1 class="titles">Galeria</h1>
-                        <h3 class="subtitles">Algumas fotos do meu trabalho</h3>
+                        <h1 class="titles" data-aos="fade-up">Galeria</h1>
+                        <h3 class="subtitles" data-aos="fade-up">Algumas fotos do meu trabalho</h3>
                             <div id="works_back">
-                                <img src=".//img/Unha1.jpeg" alt="unha pintada" class="img-works">
-                                <img src=".//img/Unha2.jpeg" alt="unha pintada" class="img-works">
-                                <img src=".//img/Unha3.jpeg" alt="unha pintada" class="img-works">
-                                <img src=".//img/Unha5.jpeg" alt="unha pintada" class="img-works">   
-                                <img src=".//img/Unha7.jpeg" alt="unha pintada" class="img-works">
-                                <img src=".//img/Unha8.jpeg" alt="unha pintada" class="img-works">
-                                <img src=".//img/Unha9.jpeg" alt="unha pintada" class="img-works">
-                                <img src=".//img/Unha10.jpeg" alt="unha pintada" class="img-works">
-                                <img src=".//img/Unha11.jpeg" alt="unha pintada" class="img-works">
-                                <img src=".//img/Unha12.jpeg" alt="unha pintada" class="img-works">
-                                <img src=".//img/Unha13.jpeg" alt="unha pintada" class="img-works">
-                                <img src=".//img/Unha14.jpeg" alt="unha pintada" class="img-works">
-                                <img src=".//img/Unha16.jpeg" alt="unha pintada" class="img-works">
+                                <img src=".//img/Unha1.jpeg" alt="unha pintada" class="img-works" data-aos="zoom-in">
+                                <img src=".//img/Unha2.jpeg" alt="unha pintada" class="img-works" data-aos="zoom-in">
+                                <img src=".//img/Unha3.jpeg" alt="unha pintada" class="img-works" data-aos="zoom-in">
+                                <img src=".//img/Unha5.jpeg" alt="unha pintada" class="img-works" data-aos="zoom-in">   
+                                <img src=".//img/Unha7.jpeg" alt="unha pintada" class="img-works" data-aos="zoom-in">
+                                <img src=".//img/Unha8.jpeg" alt="unha pintada" class="img-works" data-aos="zoom-in">
+                                <img src=".//img/Unha9.jpeg" alt="unha pintada" class="img-works" data-aos="zoom-in">
+                                <img src=".//img/Unha10.jpeg" alt="unha pintada" class="img-works" data-aos="zoom-in">
+                                <img src=".//img/Unha11.jpeg" alt="unha pintada" class="img-works" data-aos="zoom-in">
+                                <img src=".//img/Unha12.jpeg" alt="unha pintada" class="img-works" data-aos="zoom-in">
+                                <img src=".//img/Unha13.jpeg" alt="unha pintada" class="img-works" data-aos="zoom-in">
+                                <img src=".//img/Unha14.jpeg" alt="unha pintada" class="img-works" data-aos="zoom-in">
+                                <img src=".//img/Unha16.jpeg" alt="unha pintada" class="img-works" data-aos="zoom-in">
                                 </div>
                 </section>
 
@@ -63,7 +65,7 @@
                     <h3 class="subtitles"> Avaliações das minhas clientes</h3>
 
                     <div id="ava_ava">
-                        <div class="bg_ava">
+                        <div class="bg_ava" data-aos="fade-up">
                             <div class="align-ava">
                                 <h6 class="name-comentario">Débora Rodrigues</h6>
                                 <div class="stars">
@@ -77,7 +79,7 @@
                             <p class="comentario">Minhas unhas ficaram simplesmente perfeitas! Trabalho impecável.</p>
                         </div>
                         
-                        <div class="bg_ava">
+                        <div class="bg_ava" data-aos="fade-up" data-aos="fade-down">
                             <div class="align-ava">
                                 <h6 class="name-comentario">Cintia Armando</h6>
                                 <div class="stars">
@@ -91,7 +93,7 @@
                             <p class="comentario">Unhas lindas e atendimento    maravilhoso, experiência perfeita.</p>
                         </div>
 
-                        <div class="bg_ava">
+                        <div class="bg_ava" data-aos="fade-up" data-aos="fade-down">
                             <div class="align-ava">
                                 <h6 class="name-comentario">Ana Meireless</h6>
                                 <div class="stars">
@@ -105,7 +107,7 @@
                             <p class="comentario">Atendimento maravilhoso, super atenciosa e profissional.</p>
                         </div>
 
-                        <div class="bg_ava">
+                        <div class="bg_ava" data-aos="fade-up" data-aos="fade-down">
                             <div class="align-ava">
                                 <h6 class="name-comentario">Helena Silva</h6>
                             <div class="stars">
@@ -119,7 +121,7 @@
                             <p class="comentario">Capricho em cada detalhe, fiquei apaixonada pelas minhas unhas.</p>
                         </div>
 
-                        <div class="bg_ava">
+                        <div class="bg_ava" data-aos="fade-up" data-aos="fade-down">
                             <div class="align-ava">
                                 <h6 class="name-comentario">Gabriela Ribeiro</h6>
                                 <div class="stars">
@@ -133,7 +135,7 @@
                             <p class="comentario">Ambiente agradável e atendimento excelente.</p>
                         </div>
                         
-                        <div class="bg_ava">
+                        <div class="bg_ava" data-aos="fade-up" data-aos="fade-down">
                             <div class="align-ava">
                                 <h6 class="name-comentario">Yasmin Pereira</h6>
                                 <div class="stars">
@@ -151,10 +153,10 @@
                 </section>
 
                 <section id="contato">
-                    <h1 class="cont-titles">Contato</h1>
-                    <h3 class="cont-subtitles">Agende agora e <span>transforme</span> seu visual!</h3>
+                    <h1 class="cont-titles" data-aos="fade-up">Contato</h1>
+                    <h3 class="cont-subtitles" data-aos="fade-up">Agende agora e <span>transforme</span> seu visual!</h3>
 
-                    <div id="brands_align">
+                    <div id="brands_align" data-aos="fade-up">
                         <div class="link">
                             <a href="https://www.instagram.com/rebecanails_designer/" class="oloco">
                             <button class="button">
@@ -184,5 +186,9 @@
                     <h4 class="rodape">Copyright © 2026 - RebecaNails</h4>
                     <br>    
                 </footer>
+                <script src=".//main.js"></script>
+                <script>
+                AOS.init();
+                </script>
             </body>
             </html>                         
