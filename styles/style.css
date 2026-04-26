@@ -14,10 +14,24 @@ body{
     margin: 0;
     padding: 0;
     background: linear-gradient(135deg, #140021, #4c1d95, #9333ea);
+    overflow-x: hidden;
+}
+
+html{
+    overflow-x: hidden;
 }
 
 *{
     font-family: var(--font-poppins);
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 80px;
 }
 
 #home{
@@ -62,6 +76,7 @@ body{
     padding: 0 16px;
     position: fixed;
     width: 100%;
+    max-width: 100vw;
     flex-wrap: wrap;
     z-index: 9999;
     box-sizing: border-box;
@@ -96,7 +111,8 @@ body{
   border: none;
   cursor: pointer;
   padding: 8px;
-  margin-left: auto;
+ margin-left: auto;
+  flex-shrink: 0;
   display: none;
   align-items: center;
   justify-content: center;
@@ -238,7 +254,6 @@ body{
     border-radius: 50px;
     padding: 20px 34px;
     box-shadow: 0px 6px 17px 5px rgba(0,0,0,0.2);
-    transition: all 0.2s ease-in;
     cursor: pointer;
     display: inline-flex;
     user-select: auto;
@@ -283,8 +298,7 @@ body{
 
 .servicos-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
 }
 
@@ -387,6 +401,8 @@ body{
 
 .carrossel-track {
     display: flex;
+    transition: transform 0.5s ease;
+
 }
 
 .slide {
@@ -701,7 +717,6 @@ footer h4{
     .btn-atendimento-home {
         margin-top: 15px;
         padding: 12px 30px;
-        z-index: -9999;
     }
    
     .btn-atendimento-contact {
@@ -778,12 +793,7 @@ footer h4{
         margin-bottom: 20px;
     }
 
-}
-
-
-    /* Mobile */
-    @media (max-width: 768px) {
-        .slide {
+    .slide {
             height: 250px;
         }
-    }
+}
