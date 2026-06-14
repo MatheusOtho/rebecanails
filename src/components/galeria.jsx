@@ -70,7 +70,7 @@ function Galeria() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-  const [showOverlay, setShowOverlay] = useState(false);
+  const [hoveredImage, setHoveredImage] = useState(null);
   const trackRef = useRef(null);
 
   useEffect(() => {
@@ -150,19 +150,19 @@ function Galeria() {
         >
           {/* Main Carousel */}
           <div className="relative overflow-hidden rounded-3xl bg-white/5 border border-white/10">
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={currentIndex}
-                ref={trackRef}
-                className="flex"
-                initial={{ opacity: 0, x: 100 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -100 }}
-                transition={{ duration: 0.5, ease: "easeOut" }}
-                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-              >
-                {galleryImages.map((image, index) => (
-                  <div key={image.id} className="w-full flex-shrink-0 px-4 py-4">
+            <motion.div
+              ref={trackRef}
+              className="flex"
+              animate={{
+                x: `-${currentIndex * 100}%`,
+              }}
+              transition={{
+                duration: 0.5,
+                ease: "easeInOut",
+              }}
+            >
+              {galleryImages.map((image, index) => (
+                <div key={image.id} className="min-w-full flex-shrink-0 px-4 py-4">
                     <motion.div 
                       className="relative group"
                       whileHover={{ scale: 1.02 }}
@@ -181,12 +181,12 @@ function Galeria() {
                         initial={{ opacity: 0 }}
                         whileHover={{ opacity: 1 }}
                         transition={{ duration: 0.3 }}
-                        onMouseEnter={() => setShowOverlay(true)}
-                        onMouseLeave={() => setShowOverlay(false)}
+                         onMouseEnter={() => setHoveredImage(index)}
+                        onMouseLeave={() => setHoveredImage(null)}
                       />
                       
                       <AnimatePresence>
-                        {showOverlay && (
+                        {hoveredImage === index && (
                           <motion.div
                             className="absolute bottom-6 left-6 right-6"
                             initial={{ opacity: 0, y: 20 }}
@@ -222,7 +222,6 @@ function Galeria() {
                   </div>
                 ))}
               </motion.div>
-            </AnimatePresence>
 
             {/* Navigation Arrows */}
             <motion.button 
