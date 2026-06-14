@@ -270,7 +270,7 @@ function Contato() {
             </motion.div>
             <div>
               <h4 className="text-white font-semibold">Atendimento</h4>
-              <p className="text-gray-400 text-sm">Presencial</p>
+              <p className="text-gray-400 text-sm">Único e personalizado</p>
             </div>
           </motion.div>
         </motion.div>
