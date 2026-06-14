@@ -5,7 +5,7 @@ const servicesData = [
   {
     id: 1,
     title: "Alongamento",
-    subtitle: "Gel & Fibra de Vidro",
+    subtitle: "Molde F1",
     description: "Unhas mais longas, resistentes e com acabamento natural impecável. Técnica japonesa que proporciona brilho e formato perfeitos.",
     price: "Entre em contato para orçamento",
     icon: "fa-gem",
