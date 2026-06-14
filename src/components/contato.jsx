@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion} from "framer-motion";
+// import { AnimatePresence } from "framer-motion";
 
 const contactInfo = {
   whatsapp: "https://api.whatsapp.com/send?phone=5511994988231&text=Oi%2C%20tudo%20bem%3F%20Quero%20agendar%20um%20hor%C3%A1rio%20%F0%9F%92%9C",
@@ -8,20 +9,20 @@ const contactInfo = {
   location: "Itapecerica da Serra, SP",
 };
 
-const faq = [
-  {
-    question: "Quanto tempo dura o procedimento?",
-    answer: "O tempo varia de acordo com o serviço. Alongamento leva em média 2h30, enquanto banho de gel leva cerca de 1h30.",
-  },
-  {
-    question: "Preciso agendar antecedência?",
-    answer: "Sim! Recomendamos agendar com pelo menos 3 dias de antecedência para garantir o horário desejado.",
-  },
-  {
-    question: "O atendimento é a domicílio?",
-    answer: "Sim, atualmente atendo a domicílio na região de Itapecerica da Serra. O deslocamento é cobrado separadamente.",
-  },
-];
+// const faq = [
+//   {
+//     question: "Quanto tempo dura o procedimento?",
+//     answer: "O tempo varia de acordo com o serviço. Alongamento leva em média 2h30, enquanto banho de gel leva cerca de 1h30.",
+//   },
+//   {
+//     question: "Preciso agendar antecedência?",
+//     answer: "Sim! Recomendamos agendar com pelo menos 3 dias de antecedência para garantir o horário desejado.",
+//   },
+//   {
+//     question: "O atendimento é a domicílio?",
+//     answer: "Sim, atualmente atendo a domicílio na região de Itapecerica da Serra. O deslocamento é cobrado separadamente.",
+//   },
+// ];
 
 // Variants de animação
 const containerVariants = {
@@ -59,30 +60,30 @@ const headerVariants = {
   },
 };
 
-const faqItemVariants = {
-  hidden: { opacity: 0, x: -20 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      type: "spring",
-      stiffness: 100,
-    },
-  },
-};
+// const faqItemVariants = {
+//   hidden: { opacity: 0, x: -20 },
+//   visible: {
+//     opacity: 1,
+//     x: 0,
+//     transition: {
+//       type: "spring",
+//       stiffness: 100,
+//     },
+//   },
+// };
 
 function Contato() {
   const [isLoaded, setIsLoaded] = useState(false);
-  const [activeFaq, setActiveFaq] = useState(null);
+  // const [activeFaq, setActiveFaq] = useState(null);
 
   useEffect(() => {
     const timer = setTimeout(() => setIsLoaded(true), 100);
     return () => clearTimeout(timer);
   }, []);
 
-  const toggleFaq = (index) => {
-    setActiveFaq(activeFaq === index ? null : index);
-  };
+  // const toggleFaq = (index) => {
+  //   setActiveFaq(activeFaq === index ? null : index);
+  // };
 
   if (!isLoaded) {
     return (
@@ -269,13 +270,13 @@ function Contato() {
             </motion.div>
             <div>
               <h4 className="text-white font-semibold">Atendimento</h4>
-              <p className="text-gray-400 text-sm">Presencial & Domicílio</p>
+              <p className="text-gray-400 text-sm">Presencial</p>
             </div>
           </motion.div>
         </motion.div>
 
         {/* FAQ Section com Motion */}
-        <motion.div
+        {/* <motion.div
           className="max-w-3xl mx-auto"
           initial="hidden"
           animate="visible"
@@ -325,7 +326,7 @@ function Contato() {
               </motion.div>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* Final CTA com Motion */}
         <motion.div
